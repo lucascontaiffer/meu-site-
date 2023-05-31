@@ -4,18 +4,22 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 50%;/*deixa tudo no centro*/
+    padding: 1em;
+    margin: 1em 0;
+    /*deixa tudo no centro*/
 }
 .h1-small{
     font-size: 5em;
     color: white;
     font-weight: 900;
     font-family: var(--fonte-segunda);
+    text-align: center;
 }
 .small-icons{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 .icons-small{
     width: 60px;
@@ -37,15 +41,17 @@
     font-size: 1.2em;
     color: white;
     font-family: var(--fonte-segunda);
-    text-align: right;
+    text-align: center;
     margin-top: 20px;
 }
+
 .botao__links{
     margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .botao__links a{
     border: 1px solid var(--cor-terceira);
     border-radius: 10px;
@@ -59,6 +65,7 @@
 .h1-big{
     display: none;
 }
+
 .icons-big{
     display: none;
 }
@@ -69,7 +76,11 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+<<<<<<< HEAD
+        margin:0 auto ;/*deixa tudo no centro*/
+=======
         margin: 50px;/*deixa tudo no centro*/
+>>>>>>> 11bbb66b58452e070bfda0fcaaaa6ab71a25032c
     }
     .icons-small{
         display: none;
@@ -98,12 +109,11 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin: ;/*deixa tudo no centro*/
+        margin: 0 auto ;/*deixa tudo no centro*/
     }
     .h1-small{
         display: none;
     }
-    /*
     .icons-big{
         display: block;
         transition-property: transform;
@@ -119,5 +129,5 @@
     }
     .icons:hover{
         transform: translateY(-10px);
-    }*/
+    }
 }
