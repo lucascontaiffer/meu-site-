@@ -1,0 +1,123 @@
+
+.conteudo-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50%;/*deixa tudo no centro*/
+}
+.h1-small{
+    font-size: 5em;
+    color: white;
+    font-weight: 900;
+    font-family: var(--fonte-segunda);
+}
+.small-icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.icons-small{
+    width: 60px;
+    height: 60px;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.icons-small:hover{
+    transform: translateY(-15px);
+}
+.small-icons p{
+    font-size: 2em;
+    font-family: var(--fonte-segunda);
+    color: #a0c6ce;
+}
+.minha-descriçao{
+    font-size: 1.2em;
+    color: white;
+    font-family: var(--fonte-segunda);
+    text-align: right;
+    margin-top: 20px;
+}
+.botao__links{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao__links a{
+    border: 1px solid var(--cor-terceira);
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-family: var(--fonte-segunda);
+    font-weight: 500;
+}
+.h1-big{
+    display: none;
+}
+.icons-big{
+    display: none;
+}
+
+@media screen and (min-width: 767px){
+    .conteudo-principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: ;/*deixa tudo no centro*/
+    }
+    .icons-small{
+        display: none;
+    }
+    .h1-small{
+        display: none;
+    }
+    .h1-big{
+        display: block;
+    }
+    .icons-big{
+        display: block;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+    }
+    .icons-big:hover{
+        transform: translateY(-15px);
+    }
+}
+
+@media screen and (min-width: 1720px){ 
+    .conteudo-principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: ;/*deixa tudo no centro*/
+    }
+    .h1-small{
+        display: none;
+    }
+    /*
+    .icons-big{
+        display: block;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+    }
+    .icons-big:hover{
+        transform: translateY(-15px);
+    }
+    .icons{
+        display: none;
+    }
+    .icons:hover{
+        transform: translateY(-10px);
+    }*/
+}
